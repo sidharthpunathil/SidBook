@@ -20,3 +20,4 @@ def post_save_add_to_friends(sender,instance,created, **kwargs):
         receiver_.friends.add(sender_.user)
         sender_.save()
         receiver_.save()
+
