@@ -24,6 +24,7 @@ urlpatterns = [
     path('',home_view,name="home_view"),
     # namespace has to match app name
     path('profiles/', include('profiles.urls', namespace='profiles')),
+    path('posts/', include('posts.urls', namespace='posts')),
 ]
 
 

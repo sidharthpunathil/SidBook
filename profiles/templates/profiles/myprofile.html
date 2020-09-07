@@ -71,14 +71,24 @@
                             <td>{{ profile.get_friends_no }}</td>
                         </tr>
                         <tr>
-                            <td>No of friends</td>
+                            <td>friends list</td>
                             <td>
-                                <ul>
-                                    {% for friend in profile.get_friends %}
-                                        <li>friend</li>
-                                    {% endfor %}
-                                </ul>
+                                {% for friend in profile.get_friends %}
+                                    {{ friend }}
+                                {% endfor %}
                             </td>
+                        </tr>
+                        <tr>
+                            <td>No of posts</td>
+                            <td>{{ profile.get_posts_no }}</td>
+                        </tr>
+                        <tr>
+                            <td>No of Likes given</td>
+                            <td>{{ profile.get_likes_given_no }}</td>
+                        </tr>
+                        <tr>
+                            <td>No of Likes received</td>
+                            <td>{{ profile.get_likes_received_no }}</td>
                         </tr>
 
                         </tbody>
